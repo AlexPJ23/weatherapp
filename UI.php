@@ -26,7 +26,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $state = $_POST["states"];
         echo "<h2>Weather in " . $state . "</h2>";
-        $cnx = new mysqli('localhost', 'username', '', 'weather');
+        $cnx = new mysqli('localhost', 'root', '', 'weather');
         if ($cnx->connect_error) {
             die('Connection failed: '. $cnx->connect_error);
         }

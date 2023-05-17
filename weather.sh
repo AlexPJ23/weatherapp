@@ -17,7 +17,7 @@ do
         link=$(sed -n "$i"p sources.txt)    
         curl $link > $curr_data
         java -jar tagsoup-1.2.1.jar --files $curr_data
-        python3 Parser.py *$state.xhtml $user_ip $state
+        python3 Parser.py *-$state.xhtml $user_ip $state
        ((i++)) 
 
     done
