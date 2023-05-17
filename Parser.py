@@ -128,7 +128,7 @@ def make_table(cursor):
         cursor.execute(create_query)
         return True
 try:
-    cnx = mysql.connector.connect(host='localhost', user='username', password='', database='weather')
+    cnx = mysql.connector.connect(host='localhost', user='root', password='', database='weather')
     cursor = cnx.cursor()
     cnx.commit()
     if not make_table(cursor):
