@@ -6,7 +6,6 @@ if [ ! -f "tagsoup-1.2.1.jar" ]
     wget "https://repo1.maven.org/maven2/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar"
 fi
 
-bash createData.sh
 while true 
 do
     i=1
