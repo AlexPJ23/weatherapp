@@ -2,3 +2,4 @@ default-jre
 mysql-connector-python
 tagsoup-1.2.1.jar
 xml.dom.minidom
+python3-pip
